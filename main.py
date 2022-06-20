@@ -11,7 +11,7 @@ from time import sleep
 
 
 def download_and_install_update_if_available():
-     o = OTAUpdater('url-to-your-github-project')
+     o = OTAUpdater('https://gitlab.com/nrovatsou/esp32.git')
      o.install_update_if_available_after_boot('wifi-ssid', 'wifi-password')
 
 def deepsleep (duration):
