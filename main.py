@@ -11,7 +11,7 @@ from time import sleep
 
 
 def download_and_install_update_if_available():
-     o = OTAUpdater('https://gitlab.com/nrovatsou/esp32.git')
+     o = OTAUpdater('https://github.com/nrovatsou/esp32.git')
      o.install_update_if_available_after_boot('COSMOTE-179663', 'DYR7K3QY7HDU469A')
 
 def deepsleep (duration):
