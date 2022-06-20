@@ -42,7 +42,9 @@ def start():
           	
 
           idx=idx+1
-          print("Occurence: ", idx, " Counter: ", counter)
+          print("Occurence New: ", idx)
+          utime.sleep_ms(5000)
+          download_and_install_update_if_available()
 
 def boot():
      download_and_install_update_if_available()
