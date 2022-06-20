@@ -29,15 +29,17 @@ def start():
      # project = YourProject()
      # ...
      from ntptime import settime
-     
-     while(1):
-          try:
+
+     idx=0
+     try:
                settime()
                print("Time Set")
                utime.sleep_ms(2000)
-          except:
+     except:
                print("No Internet, Time not Set")
-               deepsleep(30000)	
+               deepsleep(30000)
+     while(1):
+          	
 
           idx=idx+1
           print("Occurence: ", idx, " Counter: ", counter)
