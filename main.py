@@ -31,16 +31,16 @@ def start():
      from ntptime import settime
      
      while(1):
-      try:
-       settime()
-       print("Time Set")
-       utime.sleep_ms(2000)
-      except:
-       print("No Internet, Time not Set")
-       deepsleep(30000)	
+          try:
+               settime()
+               print("Time Set")
+               utime.sleep_ms(2000)
+          except:
+               print("No Internet, Time not Set")
+               deepsleep(30000)	
 
-       idx=idx+1
-       print("Occurence: ", idx, " Counter: ", counter)
+          idx=idx+1
+          print("Occurence: ", idx, " Counter: ", counter)
 
 def boot():
      download_and_install_update_if_available()
